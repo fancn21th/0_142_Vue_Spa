@@ -1,8 +1,6 @@
 <template>
   <div class="home">
-    <hello-baz :items="fooList">
-      <template v-slot:default="slotProps">{{ slotProps.item }}</template>
-    </hello-baz>
+    <hello-baz :items="fooList" #default="{ item }">{{ item }}</hello-baz>
 
     <button @click="updateFoo">Update Foo</button>
   </div>
