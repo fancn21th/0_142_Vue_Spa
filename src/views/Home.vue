@@ -1,18 +1,28 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <hello-baz :items="fooList">
+      <template v-slot:default="slotProps">{{ slotProps.item }}</template>
+    </hello-baz>
+
+    <button @click="updateFoo">Update Foo</button>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import HelloBaz from "@/components/HelloBaz.vue";
 
 export default {
   name: "Home",
+  data: function() {
+    return {
+      fooList: ["a", "b"]
+    };
+  },
   components: {
-    HelloWorld
+    HelloBaz
+  },
+  methods: {
+    updateFoo() {}
   }
 };
 </script>
