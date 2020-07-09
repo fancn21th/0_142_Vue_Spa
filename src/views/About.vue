@@ -3,7 +3,7 @@
     <h1>我在这里做一些Spike...</h1>
     <h2>{{ foo }}</h2>
     <h2>{{ bazzz }}</h2>
-    <button @click="updateFoo">Update foo</button>
+    <button class="btn btn-indigo" @click="updateFoo">Update foo</button>
     <hr />
     <input type="text" v-model="baz" />
   </div>
