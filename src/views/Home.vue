@@ -1,26 +1,20 @@
 <template>
-  <div class="home">
-    <hello-baz :items="fooList" #default="{ item }">{{ item }}</hello-baz>
-
-    <button @click="updateFoo">Update Foo</button>
-  </div>
+  <modal-dialog :show="showDialog" @close="showDialog = false">
+    <h1>Hello There</h1>
+  </modal-dialog>
 </template>
 
 <script>
-import HelloBaz from "@/components/HelloBaz.vue";
+import ModalDialog from "@/components/ModalDialog";
 
 export default {
-  name: "Home",
-  data: function() {
-    return {
-      fooList: ["a", "b"]
-    };
-  },
   components: {
-    HelloBaz
+    ModalDialog
   },
-  methods: {
-    updateFoo() {}
+  data() {
+    return {
+      showDialog: true
+    };
   }
 };
 </script>

@@ -11,6 +11,9 @@
 
 <script>
 import { mapState } from "vuex";
+/**
+  在这个页面 演示的是 一个标准的 基于 vuex 的数据流 演示
+*/
 
 export default {
   data: function() {
