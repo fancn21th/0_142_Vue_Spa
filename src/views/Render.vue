@@ -9,10 +9,9 @@
     <list-render></list-render>
     <hr />
     <slot-render>
-      <template #default="{subject}">
-        {{ subject }}
-      </template>
+      <template #default="{subject}">{{ subject }}</template>
     </slot-render>
+    <contact-list-render></contact-list-render>
   </div>
 </template>
 
@@ -22,6 +21,7 @@ import BazRender from "@/components/BazRender";
 import BarRender from "@/components/BarRender";
 import ListRender from "@/components/ListRender";
 import SlotRender from "@/components/SlotRender";
+import ContactListRender from "@/components/ContactListRender";
 
 export default {
   components: {
@@ -30,9 +30,10 @@ export default {
     BarRender,
     ListRender,
     SlotRender,
+    ContactListRender
   },
   data() {
     return {};
-  },
+  }
 };
 </script>
