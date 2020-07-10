@@ -1,6 +1,10 @@
 <script>
 import ToggleInput from "./ToggleInput";
 
+/**
+ * 在这个案例里  我们实现了 双向绑定
+ */
+
 export default {
   props: [],
   data() {

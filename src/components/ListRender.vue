@@ -1,4 +1,9 @@
 <script>
+
+/**
+ * 在这个案例里  我们创建 数组子元素
+ */
+
 const contacts = [
   {
     firstname: "alex",
