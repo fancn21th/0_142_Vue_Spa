@@ -1,5 +1,5 @@
 <script>
-import ToggleInput from "./ToggleInput";
+import ToggleInput from './ToggleInput'
 
 /**
  * 在这个案例里  我们实现了 双向绑定
@@ -9,18 +9,18 @@ export default {
   props: [],
   data() {
     return {
-      toggled: true,
-    };
+      toggled: true
+    }
   },
   render(createElement) {
     return createElement(ToggleInput, {
       props: {
-        value: this.toggled,
+        value: this.toggled
       },
       on: {
-        input: (newValue) => (this.toggled = newValue),
-      },
-    });
-  },
-};
+        input: newValue => (this.toggled = newValue)
+      }
+    })
+  }
+}
 </script>

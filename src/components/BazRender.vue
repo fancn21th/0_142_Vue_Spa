@@ -1,5 +1,5 @@
 <script>
-import PrimaryButton from "./PrimaryButton";
+import PrimaryButton from './PrimaryButton'
 
 /**
  * 在这个案例里  我们区分 vue 事件和  dom 事件
@@ -8,7 +8,7 @@ import PrimaryButton from "./PrimaryButton";
 export default {
   props: [],
   data() {
-    return {};
+    return {}
   },
   render(createElement) {
     return createElement(
@@ -16,12 +16,12 @@ export default {
       {
         nativeOn: {
           click: () => {
-            alert("baz");
-          },
-        },
+            alert('baz')
+          }
+        }
       },
-      "Hello Baz World"
-    );
-  },
-};
+      'Hello Baz World'
+    )
+  }
+}
 </script>

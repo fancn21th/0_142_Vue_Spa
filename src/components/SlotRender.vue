@@ -21,10 +21,10 @@ export default {
   // },
   render() {
     return this.$scopedSlots.default({
-      subject: "Oh my gosh",
-    });
-  },
-};
+      subject: 'Oh my gosh'
+    })
+  }
+}
 </script>
 
 <style></style>
