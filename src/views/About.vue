@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import { mapState } from "vuex";
+import { mapState } from 'vuex'
 /**
   在这个页面 演示的是 一个标准的 基于 vuex 的数据流 演示
 */
@@ -20,26 +20,26 @@ export default {
     return {
       baz: "I'm baz",
       bazzz: "I'm bazzzz"
-    };
+    }
   },
   computed: {
     ...mapState({ foo: state => state.foo })
   },
   methods: {
     updateFoo() {
-      this.$store.dispatch("updateFooData");
+      this.$store.dispatch('updateFooData')
     },
     updateBaz() {
-      this.$store.dispatch("updateFooData");
+      this.$store.dispatch('updateFooData')
     }
   },
   watch: {
     baz: function(newBaz) {
-      this.bazzz = newBaz;
+      this.bazzz = newBaz
     }
   },
   created() {
-    this.$store.dispatch("updateFooData");
+    this.$store.dispatch('updateFooData')
   }
-};
+}
 </script>

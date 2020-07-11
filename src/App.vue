@@ -8,5 +8,3 @@
     <router-view />
   </div>
 </template>
-
-<style src="./assets/css/app.css" />

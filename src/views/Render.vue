@@ -16,12 +16,12 @@
 </template>
 
 <script>
-import FooRender from "@/components/FooRender";
-import BazRender from "@/components/BazRender";
-import BarRender from "@/components/BarRender";
-import ListRender from "@/components/ListRender";
-import SlotRender from "@/components/SlotRender";
-import ContactListRender from "@/components/ContactListRender";
+import FooRender from '@/components/FooRender'
+import BazRender from '@/components/BazRender'
+import BarRender from '@/components/BarRender'
+import ListRender from '@/components/ListRender'
+import SlotRender from '@/components/SlotRender'
+import ContactListRender from '@/components/ContactListRender'
 
 export default {
   components: {
@@ -33,7 +33,7 @@ export default {
     ContactListRender
   },
   data() {
-    return {};
+    return {}
   }
-};
+}
 </script>

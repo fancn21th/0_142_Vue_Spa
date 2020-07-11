@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import ModalDialog from "@/components/ModalDialog";
+import ModalDialog from '@/components/ModalDialog'
 
 export default {
   components: {
@@ -14,7 +14,7 @@ export default {
   data() {
     return {
       showDialog: true
-    };
+    }
   }
-};
+}
 </script>
