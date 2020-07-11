@@ -4,15 +4,20 @@ import { mockFetchContacts } from '../api'
 export default {
   data() {
     return {
-      contacts: []
+      contacts: [],
+      loading: true
     }
   },
   created() {
-    mockFetchContacts().then(contacts => (this.contacts = contacts))
+    mockFetchContacts().then(contacts => {
+      this.contacts = contacts
+      this.loading = false
+    })
   },
   render() {
     return this.$scopedSlots.default({
-      contacts: this.contacts
+      contacts: this.contacts,
+      loading: this.loading
     })
   }
 }
