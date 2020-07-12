@@ -1,24 +1,13 @@
 <template>
-  <div id="app">
-    <b-navbar toggleable="lg" type="dark" variant="info">
-      <b-navbar-brand href="#">NavBar</b-navbar-brand>
-
-      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-
-      <b-collapse id="nav-collapse" is-nav>
-        <b-navbar-nav>
-          <b-nav-item href="#"
-            ><router-link to="/">Home</router-link></b-nav-item
-          >
-          <b-nav-item href="#"
-            ><router-link to="/about">About</router-link></b-nav-item
-          >
-          <b-nav-item href="#"
-            ><router-link to="/render">Render</router-link></b-nav-item
-          >
-        </b-navbar-nav>
-      </b-collapse>
-    </b-navbar>
+  <div id="app" class="nav-bar">
+    <ul class="nav">
+      <li class="nav__item"><router-link to="/">Home</router-link></li>
+      <li class="nav__item"><router-link to="/about">About</router-link></li>
+      <li class="nav__item"><router-link to="/render">Render</router-link></li>
+    </ul>
     <router-view />
+    <portal-target name="modals"></portal-target>
   </div>
 </template>
+
+<style src="./assets/css/app.css" />

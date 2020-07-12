@@ -1,9 +1,11 @@
 <template>
-  <div style="border: 1px solid red; height:100vh" @click="showDialog = true">
+  <div>
     <modal-dialog :show="showDialog" @close="showDialog = false">
       <h1>Hello There</h1>
     </modal-dialog>
-    <portal-target name="modals"></portal-target>
+    <button type="button" class="btn btn-blue" @click="showDialog = true">
+      显示 Modal Dialog
+    </button>
   </div>
 </template>
 
@@ -16,7 +18,7 @@ export default {
   },
   data() {
     return {
-      showDialog: true
+      showDialog: false
     }
   }
 }
