@@ -1,5 +1,5 @@
 <script>
-import ToggleInput from './ToggleInput'
+import ToggleInput from '@/components/ToggleInput'
 
 /**
  * 在这个案例里  我们实现了 双向绑定

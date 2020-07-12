@@ -1,5 +1,5 @@
 <script>
-import PrimaryButton from './PrimaryButton'
+import PrimaryButton from '@/components/PrimaryButton'
 
 /**
  * 在这个案例里  我们区分 vue 事件和  dom 事件
