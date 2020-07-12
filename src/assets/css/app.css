@@ -15987,20 +15987,3 @@ html {
     z-index: auto;
   }
 }
-
-/* 自定义样式 */
-
-.nav {
-  display: block;
-  padding: 20px 0;
-  background-color: #eee;
-}
-
-.nav__item {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-.nav_item a {
-  text-decoration: none;
-}
