@@ -5,9 +5,7 @@
       v-bind:key="tab.name"
       v-bind:class="['tab-button', { active: currentTab.name === tab.name }]"
       v-on:click="currentTab = tab"
-    >
-      {{ tab.name }}
-    </button>
+    >{{ tab.name }}</button>
     <hr />
     <keep-alive>
       <component :is="currentTab.component" :tag="'button'"></component>
@@ -24,11 +22,15 @@
     <slot-render>
       <template #default="{subject}">{{ subject }}</template>
     </slot-render>
-    <contact-list-render></contact-list-render> -->
+    <contact-list-render></contact-list-render>-->
   </div>
 </template>
 
 <script>
+/**
+  在这个页面 演示的是 Render 函数
+*/
+
 import FooRender from '@/components/Render/FooRender'
 import BazRender from '@/components/Render/BazRender'
 import BarRender from '@/components/Render/BarRender'

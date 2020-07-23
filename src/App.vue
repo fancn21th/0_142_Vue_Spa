@@ -10,6 +10,9 @@
       <li class="nav__item">
         <router-link name="render" to="/render">Render</router-link>
       </li>
+      <li class="nav__item">
+        <router-link name="component" to="/comp">Component</router-link>
+      </li>
     </ul>
     <router-view />
     <portal-target name="modals"></portal-target>
